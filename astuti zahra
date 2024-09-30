@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami - Bootstrap</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4">Kontak kami.php</h2>
+
+   
+    <div class="form-group">
+      <label for="fname">Nama:</label>
+      <input type="text" class="form-control" id="fname" name="fname" placeholder="Doni">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="lname">Email:</label>
+      <input type="email" class="form-control" id="lname" name="lname" placeholder="Doni@upj.ac.id">
+    </div>
+
+   
+    <div class="form-group">
+      <label for="dob">Tanggal Lahir:</label>
+      <div class="row">
+        <div class="col">
+          <!-- Day Dropdown -->
+          <select class="form-control" id="dob-day" name="dob-day">
+            <option value="09/09/1994">09/09/1994</option>
+            <!-- Options for day -->
+            <script>
+              for (let day = 1; day <= 31; day++) {
+                document.write('<option value="' + day + '">' + day + '</option>');
+              }
+            </script>
+          </select>
+        </div>
+        
+              }
+            </script>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <p>Jenis Kelamin:</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="laki-laki" name="gender" value="Laki-laki">
+      <label class="form-check-label" for="laki-laki">Laki-laki</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="perempuan" name="gender" value="Perempuan">
+      <label class="form-check-label" for="perempuan">Perempuan</label>
+    </div>
+    
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
